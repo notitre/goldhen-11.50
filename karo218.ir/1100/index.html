@@ -1,0 +1,647 @@
+<html manifest="Cache.manifest">
+
+<!-- Mirrored from karo218.ir/1100/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 May 2024 21:16:12 GMT -->
+<head>
+<style>
+    html, body{
+margin:auto;
+font-family:sans-serif;
+font-size:20px;
+font-weight:lighter;
+text-align:left;
+color:#FFFFFF;
+background-size:cover;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ .content {
+  width:80%;
+  height:15%;
+  margin-left:7.5%;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  margin-top:1%;
+  font-size:25px;
+  text-align:center;
+  border-radius:30px;
+  padding:20px;
+  line-height:12px;
+  position:absolute;bottom:0px;
+ }
+ .title {
+  font-size:40px;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-weight:bolder;
+  margin-bottom:10px;
+ }
+ .yellow {
+  color:yellow;
+ }
+ .hue {
+  color:yellow;
+  padding:10px;
+  border-radius:10px;
+  animation:hue 5s linear infinite;
+  -webkit-animation: hue 5s linear infinite;
+  box-shadow: 0px 0px 50px yellow;
+  color:white;
+  background:rgba(255,255,0,0.4);
+ }
+ .hue:hover{
+  color:yellow;
+  background:transparent;
+ }
+ @keyframes hue{
+ 0%{
+ filter:hue-rotate(0deg);
+ -webkit-filter:hue-rotate(0deg);
+ }
+ 10%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 20%{
+ box-shadow: 1px 1px 50px yellow;
+ }
+ 30%{
+ box-shadow: 1px 0px 50px yellow;
+ }
+ 40%{
+  box-shadow: 1px -1px 50px yellow;
+ }
+ 50%{
+ box-shadow: 0px -1px 50px yellow;
+ }
+ 60%{
+ box-shadow: -1px -1px 50px yellow;
+ }
+ 70%{
+ box-shadow: -1px 0px 50px yellow;
+ }
+ 80%{
+ box-shadow: -1px 1px 50px yellow;
+ }
+ 90%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 100%{
+ filter:hue-rotate(360deg);
+ -webkit-filter:hue-rotate(360deg);
+ }
+ }
+ .text {
+  padding-bottom:50px;
+ }
+  .back {
+   font-size:25px;
+   margin-top:10px;
+   display:block;
+   line-height:55px;
+   width:20%;
+   text-decoration:none;
+   height:50px;
+   background:white;
+   color:black;
+   border-radius:15px;
+  }
+  .back:hover{
+   border:2px solid white;
+   background:transparent;
+   box-sizing:border-box;
+   color:white;
+  }
+ #psip {
+  text-align: center;
+  margin-left: 38%;
+  margin-right: auto;
+  width:15%;
+  display:flex;
+  position: absolute;
+  
+  background: rgba(0, 0, 0, 0.500);
+  border-radius: 2em;
+  border: none;
+  padding: 0.8em;
+  
+  color: #ffffff;
+  padding-left: 1.5em;
+  
+  outline: none;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
+  backdrop-filter: blur(5px);
+}
+/* Modal Content */
+.modal-content {
+  font-family: BFARNAZ;
+  font-size: 18px;
+  position: relative;
+  background-color: #dddddd;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+button {
+            background:rgba(0,0,0,0.5);
+			box-shadow: 0 5px 20px 0 white;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 173px;
+            height: 40px;            
+            text-align: center;
+}
+button:hover {
+            box-shadow: 0 5px 50px 0 white;
+            color: white;
+            border-radius: 10px;
+			background-color: #0F0F53;
+}
+
+hr {
+padding:0;
+margin:0;
+opacity:0.7;
+}
+
+#progress {
+ font-weight:bold;
+ text-shadow: 4px 4px 4px black;
+
+ font-size:17px;
+}
+.pointer {cursor: pointer;}
+
+
+    </style>
+<meta charset="utf-8">
+<title>Karo Host 11.50 fw</title>
+		<script>
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
+			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Reopen the Page !!"; }, 1500);};
+		</script>
+<script>
+function load_poc(){
+ var req = new XMLHttpRequest();
+ req.responseType = "arraybuffer";
+ req.open('GET.html', PLfile);
+ req.send();
+ req.onreadystatechange = function () {
+  if (req.readyState == 4) {
+   PLD = req.response;
+   var payload_buffer = chain.syscall(477, 0, PLD.byteLength*4 , 7, 0x1002, -1, 0);
+   var pl = p.array_from_address(payload_buffer, PLD.byteLength*4);
+   var padding = new Uint8Array(4 - (req.response.byteLength % 4) % 4);
+   var tmp = new Uint8Array(req.response.byteLength + padding.byteLength);
+   tmp.set(new Uint8Array(req.response), 0);
+   tmp.set(padding, req.response.byteLength);
+   var shellcode = new Uint32Array(tmp.buffer);
+   pl.set(shellcode,0);
+   var pthread = p.malloc(0x10);
+   chain.call(libKernelBase.add32(OFFSET_lk_pthread_create), pthread, 0x0, payload_buffer, 0);
+   goldset();
+  }
+ };
+}
+
+function GetPL(){
+ var req=new XMLHttpRequest();req.open("GET.html","http://127.0.0.1:9090/status");req.send();
+ req.onerror=function(){alert("Cannot Load Payload Because The BinLoader Server Is Not Running");return;};
+ req.onload=function(){
+  var responseJson=JSON.parse(req.responseText);
+  if(responseJson.status=="ready"){
+   getPayload(PLfile,function(req){if((req.status===200||req.status===304)&&req.response){sendPayload("http://127.0.0.1:9090/",req.response);}});
+  }
+  else{alert("Cannot Load Payload Because The BinLoader Server Is Busy");return;}
+ };
+ var getPayload=function(pl,onLoadEndCallback){
+  var req=new XMLHttpRequest();req.open('GET.html',pl);req.send();req.responseType="arraybuffer";
+  req.onload=function(event){if(onLoadEndCallback)onLoadEndCallback(req,event);};
+ };
+ var sendPayload=function(url,data,onLoadEndCallback){
+  var req=new XMLHttpRequest();req.open("POST.html",url,true);req.send(data);
+  req.onload=function(event){
+   allset();
+   if(onLoadEndCallback)onLoadEndCallback(req,event);
+  };
+ };
+}
+
+function allset() {
+window.progress.innerHTML="Payload loaded";
+}
+
+function goldset() {
+window.progress.innerHTML="GoldHEN loaded";
+}
+
+function goldhen(){
+    progress.innerHTML="Goldhen loading... please wait";
+    PLfile = "goldhen2b.bin";
+    setTimeout(poc, 500); 
+}
+
+function goldhen2(){
+    progress.innerHTML="Goldhen 2.0b2 loading... please wait";
+    PLfile = "goldhen2b2.bin";
+    setTimeout(poc, 500); 
+}
+function goldhen212(){
+    progress.innerHTML="Goldhen 2.1.2 loading... please wait";
+    PLfile = "goldhen_212_1100.bin";
+    setTimeout(poc, 500); 
+}
+function goldhen224(){
+    progress.innerHTML="Goldhen 2.2.4 loading... please wait";
+    PLfile = "goldhen_2.2.4_1100.bin";
+    setTimeout(poc, 500); 
+}
+function goldhen23(){
+    progress.innerHTML="Goldhen 2.3 loading... please wait";
+    PLfile = "goldhen_2.3_1100.bin";
+    setTimeout(poc, 500); 
+}
+</script>
+<script src="int64.js"></script>
+<script src="rop.html"></script>
+<script src="kexploit.html"></script>
+<script src="webkit.html"></script>
+</head>
+<body style='background-color:#1A1920'>
+<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'>Host 11.50 fw</h1>
+<h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status</h1>
+<div id=all style="text-align:center">
+<button style='font-size:20px;text-align:center;background-color:rgb(255, 230, 0);text-shadow: 2px 2px 4px black;color:white' class="button" id="button-Payload" onMouseOver="progress.innerHTML='Load GoldHEN 2.4B17.2 for 11.50'" onmouseout="progress.innerHTML='Status'" type="button" onclick="load_WebRTE()"> GoldHEN </button>
+<br><br>
+<br>
+</div>
+<div class="content" >
+ 	    <div class="text" >
+
+	     </div>
+</div>
+<script>
+
+function load_PS4Debug(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "ps4debug.bin";
+    GetPL();
+}
+
+function load_permanentuart(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "permanentuart.bin";
+    GetPL();
+}
+
+function load_App2USB(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "app2usb.bin";
+    GetPL();
+}
+
+function load_BackupDB(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "backupdb.bin";
+    GetPL();
+}
+
+function load_pkgb(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "pkg-backup.bin";
+    GetPL();
+}
+
+function load_DumperG(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "DumperG.bin";
+    GetPL();
+}
+
+function load_DumperU(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "DumperU.bin";
+    GetPL();
+}
+
+function load_DumperMGU(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "DumperMGU.bin";
+    GetPL();
+}
+
+function load_DumperSGU(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "DumperSGU.bin";
+    GetPL();
+}
+
+function load_KernelDumper(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "kernel-dumper.bin";
+    GetPL();
+}
+
+function load_ModuleDumper(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "moduledumper.bin";
+    GetPL();
+}
+
+function load_RestoreDB(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "restoredb.bin";
+    GetPL();
+}
+
+function load_DisableASLR(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "disableaslr.bin";
+    GetPL();
+}
+
+function load_DisableUpdates(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "disableupdates.bin";
+    GetPL();
+}
+
+function load_EnableUpdates(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "enableupdates.bin";
+    GetPL();
+}
+
+function load_EnableBrowser(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "enablebrowser.bin";
+    GetPL();
+}
+
+function load_ExitIDU(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "exitidu.bin";
+    GetPL();
+}
+  
+function load_FTP(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "ftp.bin";
+    GetPL();
+}
+  
+function load_HistoryBlocker(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "historyblocker.bin";
+    GetPL();
+}
+  
+function load_RIFRenamer(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "rifrenamer.bin";
+    GetPL();
+}
+  
+function load_Orbis(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Orbis-Toolbox-1100.bin";
+    GetPL();
+}
+
+function load_Linux1gb(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LinuxLoader-1100.bin";
+    GetPL();
+}
+
+function load_Linux2gb(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LinuxLoader-1100-2gb.bin";
+    GetPL();  
+}
+
+function load_Linux3gb(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LinuxLoader-1100-3gb.bin";
+    GetPL();  
+}
+
+function load_Linux4gb(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LinuxLoader-1100-4gb.bin";
+    GetPL();  
+}
+
+function load_Linux5gb(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LinuxLoader-1100-5gb.bin";
+    GetPL();  
+}
+
+function load_GTAVMB(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "gtavmb127.bin";
+    GetPL();
+}
+
+function load_GTAVLTS(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "gtavLTS127.bin";
+    GetPL();
+}
+
+function load_GTAAr0(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "ArabicGuy-1100-1.00.bin";
+    GetPL();
+}
+
+function load_GTAAr1(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "ArabicGuy-1100-1.27.bin";
+    GetPL();
+}
+
+function load_GTAAr2(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "ArabicGuy-1100-1.32.bin";
+    GetPL();
+}
+
+function load_GTAAr3(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "gtava3.bin";
+    GetPL();
+}
+
+function load_GTAL(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Lamance1100.bin";
+    GetPL();
+}
+
+function load_expul(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LushModz-1.0-11.00.bin";
+    GetPL();
+}
+
+function load_expul2(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "LushModz-4.0-11.00.bin";
+    GetPL();
+}
+
+function load_GTABQ(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "BeefQueefMod.bin";
+    GetPL();
+}
+
+function load_GTABQ2(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "BeefQueefMod134.bin";
+    GetPL();
+}
+
+function load_GTABQ3(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "BeefQueefMod138.bin";
+    GetPL();
+}
+
+function load_Wilde32(){
+    progress.innerHTML="Payload loading... please wait";
+    PLfile = "WildeModz-1.32.bin";
+    GetPL();
+}
+
+function load_Wilde33(){
+    progress.innerHTML="Payload loading... please wait";
+    PLfile = "WildeModz-1.33.bin";
+    GetPL();
+}
+
+function load_Wilde38(){
+    progress.innerHTML="Payload loading... please wait";
+    PLfile = "WildeModz-1.38.bin";
+    GetPL();
+}
+
+function load_Oysters100(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Oysters1.00.bin";
+    GetPL();
+}
+
+function load_Oysters113(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Oysters1.13.bin";
+    GetPL();
+}
+
+function load_Oysters119(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Oysters1.19.bin";
+    GetPL();
+}
+
+function load_Oysters124(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Oysters1.24.bin";
+    GetPL();
+}
+
+function load_Oysters129(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "Oysters1.29.bin";
+    GetPL();
+}
+
+function load_Oysters129h(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "rdr2-129-1100-havana.bin";
+    GetPL();
+}
+
+
+function load_ToDexE(){
+    progress.innerHTML="ToDEX Enabling... please wait";
+    PLfile = "todex-enable.bin";
+    GetPL();
+}
+
+function load_ToDexD(){
+    progress.innerHTML="ToDEX Disabling... please wait";
+    PLfile = "todex-disable.bin";
+    GetPL();
+}
+
+function load_WebRTE(){
+    progress.innerHTML="GoldenHen sending... please wait";
+    PLfile = "WebRTE.bin";
+    GetPL();
+}
+
+function load_FAN(){
+    progress.innerHTML="Payload sending... please wait";
+    PLfile = "fan"+tempC.value+".bin";
+    GetPL();
+}
+
+function allmods(){
+all.style.display = "none";
+gtav.style.display = "block";
+		}
+function alldumpers(){
+all.style.display = "none";
+Dumpers.style.display = "block";
+		}
+function alllinux(){
+all.style.display = "none";
+Linuxs.style.display = "block";
+		}
+function alltools(){
+all.style.display = "none";
+Tools.style.display = "block";
+		}
+function backall(){
+all.style.display = "block";
+gtav.style.display = "none";
+Linuxs.style.display = "none";
+Dumpers.style.display = "none";
+Tools.style.display = "none";
+		}
+</script>
+<script>localStorage.setItem('fanthreshold', tempC.value);
+for(var i=50; i<=80; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+</body>
+
+
+<!-- Mirrored from karo218.ir/1100/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 May 2024 21:16:13 GMT -->
+</html>
